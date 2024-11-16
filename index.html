@@ -24,7 +24,8 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'gradient-start': '#FF8938',
+            'gradient-end': '#F00'
           }
         }
       }
@@ -41,19 +42,19 @@
 
   <!-- Header Section Start -->
   <header class="container mx-auto">
-    <div class="hero">
-      <div class="hero-content flex-col lg:flex-row">
+    <div class="m-4 md:my-20">
+      <div class="flex flex-col lg:flex-row justify-between items-center">
         <div class="space-y-4">
           <h1 class="text-2xl md:text-7xl font-extrabold text-[#1C1C1C] leading-8 md:leading-[100px]">It's good <br>
             tea time at The <br>
             Tea House</h1>
           <p class="text-[#777777] text-lg font-medium leading-7">Tea and Botanical Solutions Supplier Give Optimum
             Satisfaction To Your Taste Buds.</p>
-          <button class="btn btn-primary text-white border-0 bg-gradient-to-r from-[#F00] to-[#FF8938]">Explore
-            More</button>
+          <button class="btn btn-primary text-white border-0 bg-gradient-to-r from-gradient-end to-gradient-start">Explore
+            More <i class="fa-solid fa-arrow-trend-up"></i></button>
         </div>
         <div>
-          <img src="images/banner.png" class="max-w-sm" />
+          <img src="images/banner.png" class="" />
           <!-- Ratings badge -->
           <div class="flex items-center gap-3 drop-shadow-lg bg-white p-5 w-60 -mt-16 rounded-lg">
             <i class="fa-solid fa-star text-2xl text-amber-400"></i>
@@ -89,7 +90,7 @@
           </div>
         </div>
         <!-- second card -->
-        <div class="card p-8 bg-gradient-to-r from-[#F4F4F4] to-[#f4f4f400]  shadow-xl">
+        <div class="card p-8 bg-gradient-to-r from-[#F4F4F4] to-[#f4f4f4]  shadow-xl">
           <figure>
             <img src="images/tea-2.png" alt="tea" />
           </figure>
@@ -209,10 +210,95 @@
       </div>
 
     </section>
+
+    <!-- Event section start -->
+     <section class="my-10 md:mt-20 md:mb-28">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-[#1C1C1C] text-center mb-5">news & events</h2>
+      <p class="lg:max-w-3xl mx-auto mb-12 text-center text-[#777777] text-base font-medium leading-7">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+     </section>
+
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-4 md:mx-0 mb-10 md:mb-24 gap-6">
+        <!-- First Card -->
+        <div class="p-6 border border-[#D2D2D2] rounded-xl space-y-4">
+          <img src="images/news-1.png" class="w-full" alt="">
+          <p class="text-[#777777] text-base font-medium leading-7">Feb 05, 2027</p>
+          <h2 class="text-[#1C1C1C] text-base md:text-xl font-extrabold capitalize">Collecting 8 points for <br> discount</h2>
+          <p class="text-[#777777] text-base font-medium leading-7 pb-5">There are many variations of passages of Lorem Ipsum available.</p>
+          <a class="text-base font-bold text-[#1C1C1C] leading-7" href="">Learn More</a>
+        </div>
+        <!-- Second Card -->
+        <div class="p-6 border border-[#D2D2D2] rounded-xl space-y-4">
+          <img src="images/news-2.png" class="w-full" alt="">
+          <p class="text-[#777777] text-base font-medium leading-7">Feb 05, 2027</p>
+          <h2 class="text-[#1C1C1C] text-base md:text-xl font-extrabold capitalize">Collecting 8 points for <br> discount</h2>
+          <p class="text-[#777777] text-base font-medium leading-7 pb-5">There are many variations of passages of Lorem Ipsum available.</p>
+          <a class="text-base font-bold text-[#1C1C1C] leading-7" href="">Learn More</a>
+        </div>
+        <!-- Third Card -->
+        <div class="p-6 border border-[#D2D2D2] rounded-xl space-y-4">
+          <img src="images/news-3.png" class="w-full" alt="">
+          <p class="text-[#777777] text-base font-medium leading-7">Feb 05, 2027</p>
+          <h2 class="text-[#1C1C1C] text-base md:text-xl font-extrabold capitalize">Collecting 8 points for <br> discount</h2>
+          <p class="text-[#777777] text-base font-medium leading-7 pb-5">There are many variations of passages of Lorem Ipsum available.</p>
+          <a class="text-base font-bold text-[#1C1C1C] leading-7" href="">Learn More</a>
+        </div>
+      </div>
   </main>
 
   <!-- main section end -->
-  <footer></footer>
+   <!-- Footer section start -->
+
+  <footer class="bg-gradient-to-r from-[#ff89381a] to-[#ff00001a] text-base-content p-4 lg:px-48 lg:py-10">
+
+    <div class="flex flex-row md:flex-row justify-between my-4 items-center lg:my-24 gap-10 md:gap-0 mb-10 md:mb-0">
+      <img src="images/cup.png" alt="">
+      <p class="text-xl text-[#494949] font-medium leading-10"><span>Ready to get strated?</span>
+      
+        <button class="ml-10 btn btn-info border-0 bg-gradient-to-r from-gradient-start to-gradient-end text-white capitalize">get started</button>
+      </p>
+    </div>
+
+    <div class="footer">
+      <nav>
+        <h6 class="footer-title text-[#1C1C1C] font-semibold text-base md:text-xl">Quick Links</h6>
+        <a class="link link-hover text-[#494949] font-normal text-sm md:text-base">Home</a>
+        <a class="link link-hover text-[#494949] font-normal text-sm md:text-base">About Us</a>
+        <a class="link link-hover text-[#494949] font-normal text-sm md:text-base">insurance</a>
+        <a class="link link-hover text-[#494949] font-normal text-sm md:text-base">PrivacyPolicy</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title text-[#1C1C1C] font-semibold text-base md:text-xl">our service</h6>
+        <a class="link link-hover text-[#494949] font-normal text-sm md:text-base">life insurance</a>
+        <a class="link link-hover text-[#494949] font-normal text-sm md:text-base">car insurance</a>
+        <a class="link link-hover text-[#494949] font-normal text-sm md:text-base">health insurance</a>
+        <a class="link link-hover text-[#494949] font-normal text-sm md:text-base">house insurance</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title text-[#1C1C1C] font-semibold text-base md:text-xl">help</h6>
+        <a class="link link-hover text-[#494949] font-normal text-sm md:text-base">FAQs</a>
+        <a class="link link-hover text-[#494949] font-normal text-sm md:text-base">contact us</a>
+      </nav>
+      <form>
+        <h6 class="footer-title text-[#1C1C1C] font-semibold text-base md:text-xl">subscribe to our <br> newsletter</h6>
+        <fieldset class="form-control w-80">
+          <label class="label">
+          </label>
+          <div class="join">
+            <input
+              type="text"
+              placeholder="Email Addresh"
+              class="pb-4 bg-transparent  border-b-2 border-black outline-none " />
+            <button class="btn btn-primary border-0 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end"><i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="my-6 md:mt-14 md:mb-16 text-center text-[#494949] font-medium text-sm md:text-base">
+      <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+    </div>
+  </footer>
+
 </body>
 
 </html>
